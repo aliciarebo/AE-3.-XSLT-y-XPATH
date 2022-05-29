@@ -1,0 +1,177 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing:border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-grow: 1;
+}
+
+.sub-container1 {
+  flex: 1;
+  display:flex;
+  flex-direction: column;
+}
+
+.sub-container2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9ff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #000014;
+  padding:30px;
+}
+
+h1 {
+  color: #fff;
+  font-family: system-ui;
+}
+
+.header nav {
+  display: flex;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.header nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+  padding: 20px;
+  font-family: system-ui;
+}
+
+.header nav a:hover{
+  color:yellow;
+}
+
+.informacion{
+  margin-bottom: 20px;
+}
+
+.profesores, .info_centro, .ciclo_format {
+  font-family: system-ui;
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 3px solid #000014;
+  font-family: system-ui;
+}
+
+li{
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.titulo{
+  font-size: 22px;
+  font-family: system-ui;
+  margin-bottom: 20px;
+  margin-top:25px;
+}
+
+#formulario-contacto {
+  width: 350px;
+  background: #000014;
+  padding: 30px;
+  margin: auto;
+  margin-top: 12px;
+  border-radius: 7px;
+  font-family: system-ui;
+  color: #fff;
+  box-shadow: 7px 13px 37px #000;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #d9ddde;
+  font-family: system-ui;
+  font-size: 15px;
+}
+
+.desplegable {
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  color: black;
+  margin-bottom: 16px;
+  border: 1px solid #d9ddde;
+  font-size: 15px;
+}
+
+textarea {
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  color: black;
+  margin-bottom: 16px;
+  border: 1px solid #d9ddde;
+  font-size: 12px;
+}
+
+.boton {
+  width: 100%;
+  background: #000014;
+  padding: 13px;
+  color: white;
+  margin: 17px 0;
+  font-size: 16px;
+  border-radius: 71px;
+  border: 2px solid white;
+}
+
+.boton:hover{
+  color: black;
+  background-color: #fff;
+}
+
+#formulario-contacto label {
+  display: block;
+  padding-bottom: 10px;
+}
+
+#formulario-contacto .form-field {
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color:#000014;
+  color: white;
+  font-family:system-ui;
+}
+
+@media only screen
+and (max-device-width : 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
